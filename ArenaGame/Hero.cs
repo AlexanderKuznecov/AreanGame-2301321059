@@ -10,7 +10,7 @@ namespace ArenaGame
     {
         protected Random random = new Random();
         public string Name { get; private set; }
-        public double Health { get; protected set; } // Change to protected setter
+        public double Health { get; protected set; } 
         public double Armor { get; private set; }
         public double Strenght { get; private set; }
         public IWeapon Weapon { get; private set; }
@@ -32,7 +32,7 @@ namespace ArenaGame
             Weapon = weapon;
         }
 
-        // returns actual damage
+        
         public virtual double Attack()
         {
             double totalDamage = Strenght + Weapon.AttackDamage;
